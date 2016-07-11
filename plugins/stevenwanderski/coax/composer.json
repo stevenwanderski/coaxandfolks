@@ -1,0 +1,7 @@
+{
+    "name": "Coax and Folks Plugin",
+    "email": "steven.wanderski@gmail.com",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}

@@ -1,0 +1,81 @@
+1468206076a:1:{s:8:"band.htm";a:12:{s:8:"fileName";s:8:"band.htm";s:7:"content";s:989:"title = "Band"
+url = "/:slug"
+is_hidden = 0
+layout = "main"
+
+[builderDetails bandDetails]
+modelClass = "StevenWanderski\Coax\Models\Band"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+
+[showList]
+[photos]
+==
+
+<div class="container">
+  <h1>{{ bandDetails.record.name }}</h1>
+</div>
+
+<div class="container container__flex">
+  <main>
+    <div class="main-block">
+      <img src="{{ bandDetails.record.bodyPhoto.thumb(620, 500) }}" class="main--image" />
+    </div>
+
+    {% if bandDetails.record.video %}
+    <div class="main-block">
+      <div class="video-container">
+        {{ bandDetails.record.video | raw }}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="main-block">
+      {{ bandDetails.record.body | raw }}
+    </div>
+  </main>
+
+  <aside>
+    <div class="aside-block">
+      {% component 'showList' %}
+    </div>
+
+    <div class="aside-block">
+      {% component 'photos' %}
+    </div>
+  </aside>
+</div>";s:5:"mtime";i:1468190252;s:6:"markup";s:710:"<div class="container">
+  <h1>{{ bandDetails.record.name }}</h1>
+</div>
+
+<div class="container container__flex">
+  <main>
+    <div class="main-block">
+      <img src="{{ bandDetails.record.bodyPhoto.thumb(620, 500) }}" class="main--image" />
+    </div>
+
+    {% if bandDetails.record.video %}
+    <div class="main-block">
+      <div class="video-container">
+        {{ bandDetails.record.video | raw }}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="main-block">
+      {{ bandDetails.record.body | raw }}
+    </div>
+  </main>
+
+  <aside>
+    <div class="aside-block">
+      {% component 'showList' %}
+    </div>
+
+    <div class="aside-block">
+      {% component 'photos' %}
+    </div>
+  </aside>
+</div>";s:4:"code";N;s:5:"title";s:4:"Band";s:3:"url";s:6:"/:slug";s:9:"is_hidden";s:1:"0";s:6:"layout";s:4:"main";s:26:"builderDetails bandDetails";a:5:{s:10:"modelClass";s:32:"StevenWanderski\Coax\Models\Band";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:4:"name";s:15:"notFoundMessage";s:16:"Record not found";}s:8:"showList";a:0:{}s:6:"photos";a:0:{}}}

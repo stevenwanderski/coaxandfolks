@@ -1,0 +1,53 @@
+title = "Home"
+url = "/"
+is_hidden = 0
+layout = "main"
+
+[builderDetails homePage]
+modelClass = "StevenWanderski\Coax\Models\Page"
+identifierValue = "home"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+
+[showList]
+[trackPlayer]
+[social]
+==
+<div class="container">
+  <h1><em>Chicago</em> Event Musicians</h1>
+</div>
+
+<div class="container container__flex">
+
+  <main>
+    <div class="main-block">
+      <img src="{{ homePage.record.photo.thumb(620, 500) }}" class="main--image" />
+    </div>
+
+    {% if homePage.record.video %}
+    <div class="main-block">
+      <div class="video-container">
+        {{ homePage.record.video | raw }}
+      </div>
+    </div>
+    {% endif %}
+
+    {{ homePage.record.body | raw }}
+  </main>
+
+  <aside>
+    <div class="aside-block">
+      {% component 'trackPlayer' track=homePage.record.track.path %}
+    </div>
+
+    <div class="aside-block">
+      {% component 'showList' %}
+    </div>
+
+    <div class="aside-block">
+      {% component 'social' %}
+    </div>
+  </aside>
+
+</div>

@@ -1,0 +1,10 @@
+name: Pages
+form: $/stevenwanderski/coax/models/page/fields.yaml
+modelClass: StevenWanderski\Coax\Models\Page
+defaultRedirect: stevenwanderski/coax/pages
+create:
+    redirect: 'stevenwanderski/coax/pages/update/:id'
+    redirectClose: stevenwanderski/coax/pages
+update:
+    redirect: stevenwanderski/coax/pages
+    redirectClose: stevenwanderski/coax/pages

@@ -1,0 +1,48 @@
+fields:
+    title:
+        label: Title
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    slug:
+        label: URL
+        oc.commentPosition: ''
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    body:
+        label: Body
+        span: full
+        size: ''
+        oc.commentPosition: ''
+        type: richeditor
+    track:
+        label: Track
+        span: auto
+        oc.commentPosition: ''
+        mode: file
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        fileTypes: mp3
+        type: fileupload
+    video:
+        label: 'Youtube iFrame Code'
+        span: auto
+        type: text
+        comment: 'Sample: youtube.com/foobar'
+    photo:
+        label: Photo
+        span: auto
+        oc.commentPosition: ''
+        mode: image
+        useCaption: 0
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '150'
+        imageHeight: '150'
+        type: fileupload

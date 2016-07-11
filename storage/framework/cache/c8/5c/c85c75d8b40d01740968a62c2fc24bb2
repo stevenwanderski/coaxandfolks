@@ -1,0 +1,136 @@
+1468206076a:1:{s:8:"main.htm";a:6:{s:8:"fileName";s:8:"main.htm";s:7:"content";s:2324:"[builderList bandList]
+modelClass = "StevenWanderski\Coax\Models\Band"
+scope = "-"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "band"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+sortColumn = "sort_order"
+sortDirection = "asc"
+
+==
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coax &amp; Folks</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700,700italic,400,400italic">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.8.0/fullcalendar.css">
+  <link rel="stylesheet" href="/themes/coax/assets/css/app.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  {% framework extras %}
+  <script src="/themes/coax/assets/js/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.8.0/fullcalendar.min.js"></script>
+  <script src="/themes/coax/assets/js/jquery.jplayer.min.js"></script>
+  <script src="/themes/coax/assets/js/magnific.popup.min.js"></script>
+  <script src="/themes/coax/assets/js/app.js"></script>
+  {% scripts %}
+</head>
+<body>
+  <header class="header header__full">
+    <div class="container container__flex container__align-items">
+      <div class="header--logo header--logo__full">
+        <a href="/">
+          <img src="/themes/coax/assets/svg/logo_white.svg" />
+        </a>
+      </div>
+
+      <div class="header--contact">
+        <a href="/contact" class="header--button">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <header class="header header__small container">
+    <div class="header--logo header--logo__small">
+      Coax<em>&amp;</em>Folks
+    </div>
+
+    <div class="header--control"></div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="/contact" class="nav--contact">Contact</a>
+      {% component 'bandList' %}
+    </div>
+  </nav>
+
+  <div class="page">
+    {% page %}
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      {% component 'bandList' %}
+    </div>
+  </footer>
+</body>
+</html>";s:5:"mtime";i:1468196208;s:6:"markup";s:2025:"<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coax &amp; Folks</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700,700italic,400,400italic">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.8.0/fullcalendar.css">
+  <link rel="stylesheet" href="/themes/coax/assets/css/app.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  {% framework extras %}
+  <script src="/themes/coax/assets/js/moment.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.8.0/fullcalendar.min.js"></script>
+  <script src="/themes/coax/assets/js/jquery.jplayer.min.js"></script>
+  <script src="/themes/coax/assets/js/magnific.popup.min.js"></script>
+  <script src="/themes/coax/assets/js/app.js"></script>
+  {% scripts %}
+</head>
+<body>
+  <header class="header header__full">
+    <div class="container container__flex container__align-items">
+      <div class="header--logo header--logo__full">
+        <a href="/">
+          <img src="/themes/coax/assets/svg/logo_white.svg" />
+        </a>
+      </div>
+
+      <div class="header--contact">
+        <a href="/contact" class="header--button">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <header class="header header__small container">
+    <div class="header--logo header--logo__small">
+      Coax<em>&amp;</em>Folks
+    </div>
+
+    <div class="header--control"></div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="/contact" class="nav--contact">Contact</a>
+      {% component 'bandList' %}
+    </div>
+  </nav>
+
+  <div class="page">
+    {% page %}
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      {% component 'bandList' %}
+    </div>
+  </footer>
+</body>
+</html>";s:4:"code";N;s:20:"builderList bandList";a:10:{s:10:"modelClass";s:32:"StevenWanderski\Coax\Models\Band";s:5:"scope";s:1:"-";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:4:"band";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:10:"pageNumber";s:11:"{{ :page }}";s:10:"sortColumn";s:10:"sort_order";s:13:"sortDirection";s:3:"asc";}}}

@@ -1,0 +1,49 @@
+title = "Band"
+url = "/:slug"
+is_hidden = 0
+layout = "main"
+
+[builderDetails bandDetails]
+modelClass = "StevenWanderski\Coax\Models\Band"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+
+[showList]
+[photos]
+==
+
+<div class="container">
+  <h1>{{ bandDetails.record.name }}</h1>
+</div>
+
+<div class="container container__flex">
+  <main>
+    <div class="main-block">
+      <img src="{{ bandDetails.record.bodyPhoto.thumb(620, 500) }}" class="main--image" />
+    </div>
+
+    {% if bandDetails.record.video %}
+    <div class="main-block">
+      <div class="video-container">
+        {{ bandDetails.record.video | raw }}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="main-block">
+      {{ bandDetails.record.body | raw }}
+    </div>
+  </main>
+
+  <aside>
+    <div class="aside-block">
+      {% component 'showList' %}
+    </div>
+
+    <div class="aside-block">
+      {% component 'photos' %}
+    </div>
+  </aside>
+</div>
