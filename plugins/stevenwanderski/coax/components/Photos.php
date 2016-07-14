@@ -12,7 +12,6 @@ class Photos extends \Cms\Classes\ComponentBase {
   }
 
   public function photos() {
-    debug($this->param('slug'));
     $band = \StevenWanderski\Coax\Models\Band::where('slug', $this->param('slug'))->first();
     return $band->photos()->get();
   }
