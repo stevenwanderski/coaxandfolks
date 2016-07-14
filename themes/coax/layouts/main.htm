@@ -21,6 +21,7 @@ sortDirection = "asc"
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700,700italic,400,400italic">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.8.0/fullcalendar.css">
   <link rel="stylesheet" href="/themes/coax/assets/css/app.css">
+  <link rel="icon" href="/themes/coax/assets/images/favicon.png?v=4">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -68,7 +69,16 @@ sortDirection = "asc"
 
   <footer class="footer">
     <div class="container">
-      {% component 'bandList' %}
+      <div class="footer--block">
+        {% component 'bandList' %}
+      </div>
+
+      <div class="footer--block">
+        <ul>
+          <li>coaxandfolks@gmail.com</li>
+          <li>708.612.6034</li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>

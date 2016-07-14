@@ -15,6 +15,7 @@
 
 .footer li {
   list-style: none;
+  padding-right: 20px;
 
   @media(max-width: $breakpoint-medium) {
     padding-bottom: 20px;
@@ -24,9 +25,12 @@
 .footer a {
   color: #fff;
   text-decoration: none;
-  padding-right: 20px;
 }
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.footer--block:not(:last-of-type) {
+  margin-bottom: 40px;
 }
