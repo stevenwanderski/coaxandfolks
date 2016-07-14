@@ -68,8 +68,8 @@ class ContactForm extends \Cms\Classes\ComponentBase
         'contactMessage' => $message
       ];
       Mail::send('contactform', $mailVars, function($message) {
-          $message->to('steven@bxcreative.com', 'Steven Wanderski');
-          $message->bcc('steven.wanderski@gmail.com', 'Steven Wanderski');
+          $message->to('coaxandfolks@gmail.com', 'Mike Coax')
+                  ->bcc('steven.wanderski@gmail.com', 'Steven Wanderski');
       });
 
       return array('success' => true);
