@@ -2,3 +2,7 @@
 !/themes
 /themes/*
 !/themes/coax
+
+!/plugins
+/plugins/*
+!/plugins/stevenwanderski

@@ -1,0 +1,5 @@
+title: 'Reorder Bands'
+modelClass: StevenWanderski\Coax\Models\Band
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

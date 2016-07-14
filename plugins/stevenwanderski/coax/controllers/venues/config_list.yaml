@@ -1,0 +1,11 @@
+list: $/stevenwanderski/coax/models/venue/columns.yaml
+modelClass: StevenWanderski\Coax\Models\Venue
+title: Venues
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'stevenwanderski/coax/venues/update/:id'

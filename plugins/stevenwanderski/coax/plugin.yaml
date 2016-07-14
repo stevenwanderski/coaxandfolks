@@ -1,0 +1,26 @@
+plugin:
+    name: 'stevenwanderski.coax::lang.plugin.name'
+    description: 'stevenwanderski.coax::lang.plugin.description'
+    author: 'Steven Wanderski'
+    icon: oc-icon-bullseye
+    homepage: ''
+navigation:
+    bands:
+        label: Bands
+        url: stevenwanderski/coax/bands
+        icon: icon-music
+        order: '12'
+    venues:
+        label: Venues
+        url: stevenwanderski/coax/venues
+        icon: icon-building
+        order: '11'
+    shows:
+        label: Shows
+        url: stevenwanderski/coax/shows
+        icon: icon-microphone
+        order: '10'
+    pages:
+        label: Homepage
+        url: stevenwanderski/coax/pages/update/1
+        icon: icon-home

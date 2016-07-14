@@ -1,0 +1,13 @@
+<h1>Calendar</h1>
+
+<div id="calendar"></div>
+
+<script>
+  console.log({{__SELF__.shows | raw}});
+  $('#calendar').fullCalendar({
+    events: {{__SELF__.shows | raw}},
+    eventRender: function(event, element) {
+      element.find('span.fc-title').html(element.find('span.fc-title').text());
+    }
+  });
+</script>
